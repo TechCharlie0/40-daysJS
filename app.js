@@ -46,10 +46,33 @@
 
 // comparasion operator
 
-let a = 20;
-let  b= 50;
-let age=(a<b);
-console.log(age);
+// let a = 20;
+// let  b= 50;
+// let age=(a<b);
+// console.log(age);
+
+// let a = 20;
+// let  b= 20;
+// let age=(a<=b);
+// console.log(age);
+
+// let a = 20;
+// let  b= 20;
+// let age=(a == b);
+// console.log(age);
+
+
+// let a = 50;
+// let  b= 50;
+// let age=(a != b);
+// console.log(age);
+
+let a = 'P';
+let  b= 'p';
+let unicode=(a < b);
+console.log(unicode);
+
+
 
 
 
