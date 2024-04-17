@@ -194,51 +194,188 @@
 
 
 
-let color = "yellow"
-if (color === "red") {
-    console.log("you can go");
+// let color = "yellow"
+// if (color === "red") {
+//     console.log("you can go");
     
-}
-else if( color === "green"){
-    console.log("you cannot go");
-}
+// }
+// else if( color === "green"){
+//     console.log("you cannot go");
+// }
 
-else {
-    console.log("go");
-}
+// else {
+//     console.log("go");
+// }
 
 
-let grade = 20;
+// let grade = 20;
 
-if (grade >= 90) {
-    console.log("Conguralation you get A+");
+// if (grade >= 90) {
+//     console.log("Conguralation you get A+");
     
-}
+// }
 
- else if (grade >= 80) {
-    console.log("Conguralation you get A");
+//  else if (grade >= 80) {
+//     console.log("Conguralation you get A");
     
-}
- else if (grade >= 70) {
-    console.log("Conguralation you get B+");
+// }
+//  else if (grade >= 70) {
+//     console.log("Conguralation you get B+");
     
-}
-else if (grade >= 60) {
-    console.log("Conguralation you get B");
+// }
+// else if (grade >= 60) {
+//     console.log("Conguralation you get B");
     
-}
- else if (grade >= 50) {
-    console.log("Conguralation you get C+");
+// }
+//  else if (grade >= 50) {
+//     console.log("Conguralation you get C+");
     
-}
+// }
 
- else if (grade >= 40) {
-    console.log("Conguralation you get C");
+//  else if (grade >= 40) {
+//     console.log("Conguralation you get C");
     
-}
-else{
-    console.log("Failed");
-}
+// }
+// else{
+//     console.log("Failed");
+// }
+
+
+
+
+// practice qn
+
+// let size = "small";
+
+// if (size === "small") {
+//     console.log("price is 50 ");
+    
+// }
+// else if(size === "medium"){
+//     console.log("size is 100");
+// }
+// else if(size === "large"){
+//     console.log("size is 200");
+// }
+// else{
+//     console.log("price is 250");
+// }
+
+
+// nested if else
+
+// let marks = 70;
+// if (marks >=40) {
+//     console.log("Conguralation you are passed")
+//     if (marks >= 60) {
+//         console.log("Conguralation you got B+")
+
+        
+//     } else {
+//         console.log("Conguralation you got B")
+
+        
+//     }
+    
+// } else {
+//     console.log("Better luck next time failed")
+    
+// }
+
+
+
+// logical operator
+
+// and operator
+// let  marks = 70;
+// if (marks >= 33 && marks >= 80) {
+//     console.log("pass");
+//     console.log("A+");
+
+
+    
+// }
+// else{
+//     console.log("fail");
+
+// }
+
+
+// or operator
+// let  marks = 20;
+// if (marks >= 33 || marks >= 80) {
+//     console.log("pass");
+//     console.log("A+");
+
+
+    
+// }
+// else{
+//     console.log("fail");
+
+// }
+
+// not operator
+
+// let  marks = 0;
+// if (!marks < 33) {
+//     console.log("pass");
+//     console.log("A+");
+
+
+    
+// }
+// else{
+//     console.log("fail");
+
+// }
+
+
+// let str = "apple";
+// if (str[0] === "a" && str.length > 3){
+//     console.log("good");
+// }
+// else{
+// console.log("bad");
+// }
+
+// let a = "ant"
+// if( a[0]===a && a.length>3){
+//     console.log("good");
+
+// }
+// else{
+//     console.log("bad");
+
+// }
+
+// 
+// alert("do you want to leave this site");
+// console.log("this is an error msg");
+
+// prompt("please enter your name");
+// prompt("please enter your password");
+
+// let firstName = prompt("enter your name");
+// let lastName = prompt("enter yout last name");
+// let msg="welcome"+ firstName+ " " + lastName + "!";
+// alert(msg);
+
+// let str = "heisagoodboy";
+// if ( str.lenth > 10 ) {
+//     console.log("The string is long");
+    
+// }
+// if( str.lenth < 10 ){
+//     console.log("the string is short");
+// }
+
+
+
+
+
+
+
 
 
 
