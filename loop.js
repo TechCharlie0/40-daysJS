@@ -15,8 +15,8 @@
 
 // loops with arrays
 
-let fruits = ("mango", "apple", "papaya", "orange");
-for (let i = 0; i < fruits.length; i++) {
+let fruits = ["mango", "apple", "papaya"];
+for (let i = 0; i <fruits.length; i++) {
     console.log(i , fruits[i]);
     
 }
