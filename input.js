@@ -1,26 +1,66 @@
-let num1 = parseFloat(prompt("first number"));
-let num2 = parseFloat( prompt("second number"));
-let num3 = prompt("which operation");
+// let num1 = parseFloat(prompt("first number"));
+// let num2 = parseFloat( prompt("second number"));
+// let num3 = prompt("which operation");
 
-switch(num3) {
-    case "add":
-        console.log(num1 + num2);
-        break;
-    case "subtract":
-        console.log(num1 - num2);
-      break;
-    case "multiply":
-        console.log(num1 * num2);
+// switch(num3) {
+//     case "add":
+//         console.log(num1 + num2);
+//         break;
+//     case "subtract":
+//         console.log(num1 - num2);
+//       break;
+//     case "multiply":
+//         console.log(num1 * num2);
 
-        break;
-    case "divide":
-        if (num2 !== 0) {
-            console.log(num1 / num2);
+//         break;
+//     case "divide":
+//         if (num2 !== 0) {
+//             console.log(num1 / num2);
 
-        } else {
-            console.log("eror");
-        }
-        break;
-    default:
-        console,log("Invalid operation");
-}
+//         } else {
+//             console.log("eror");
+//         }
+//         break;
+//     default:
+//         console,log("Invalid operation");
+
+// let num1 = parseFloat(prompt("first number"));
+// let num2 = parseFloat( prompt("second number"));
+// let num3 = prompt("which operation");
+// if(num3 == "add"){
+//     console.log(num1 + num2);
+
+
+
+// }
+// else if( num3 == "subtract"){
+//     console.log(num1 - num2);
+
+
+// }
+// else if(num3 == "multiply"){
+//     console.log(num1 * num2);
+
+// }
+// else if (operation == "divide") {
+//     if (num2 !== 0) {
+//         console.log(num1 / num2);
+//     } else {
+//         console.log("Error");
+//     }
+// }
+// else{
+//     console.log("invalod");
+
+// }
+let student = {"isha", 99}, {"manisha", 88}, {"anisha",76},{"alisha",87};
+
+
+
+
+
+
+
+
+
+    
