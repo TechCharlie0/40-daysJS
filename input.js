@@ -53,8 +53,24 @@
 //     console.log("invalod");
 
 // }
-let student = {"isha", 99}, {"manisha", 88}, {"anisha",76},{"alisha",87};
+const classInfo = {
+    aman:{
+        grade: "A",
+        city: "chitwan"
+    },
+    isha:{
+        grade: "A+",
+        city: "chitwan"
 
+
+
+    },
+    utsav:{
+        grade: "B+",
+        city: "chitwan"
+
+    }
+}
 
 
 
