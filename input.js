@@ -53,24 +53,46 @@
 //     console.log("invalod");
 
 // }
-const classInfo = {
-    aman:{
+// const classInfo = {
+//     aman:{
+//         grade: "A",
+//         city: "chitwan"
+//     },
+//     isha:{
+//         grade: "A+",
+//         city: "chitwan"
+
+
+
+//     },
+//     utsav:{
+//         grade: "B+",
+//         city: "chitwan"
+
+//     }
+// }
+
+const classInfo = [
+    {
+        name: "aman",
         grade: "A",
         city: "chitwan"
     },
-    isha:{
+    {
+       name: "isha",
         grade: "A+",
         city: "chitwan"
 
 
 
     },
-    utsav:{
+    {
+        name: "utsav",
         grade: "B+",
         city: "chitwan"
 
     }
-}
+];
 
 
 
