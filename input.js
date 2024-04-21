@@ -53,46 +53,46 @@
 //     console.log("invalod");
 
 // }
-// const classInfo = {
-//     aman:{
-//         grade: "A",
-//         city: "chitwan"
-//     },
-//     isha:{
-//         grade: "A+",
-//         city: "chitwan"
-
-
-
-//     },
-//     utsav:{
-//         grade: "B+",
-//         city: "chitwan"
-
-//     }
-// }
-
-const classInfo = [
-    {
-        name: "am",
+const classInfo = {
+    am:{
         grade: "A",
         city: "chitwan"
     },
-    {
-       name: "is",
+    is:{
         grade: "A+",
         city: "chitwan"
 
 
 
     },
-    {
-        name: "ut",
+    ut:{
         grade: "B+",
         city: "chitwan"
 
     }
-];
+}
+
+// const classInfo = [
+//     {
+//         name: "am",
+//         grade: "A",
+//         city: "chitwan"
+//     },
+//     {
+//        name: "is",
+//         grade: "A+",
+//         city: "chitwan"
+
+
+
+//     },
+//     {
+//         name: "ut",
+//         grade: "B+",
+//         city: "chitwan"
+
+//     }
+// ];
 
  
 
