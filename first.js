@@ -2,48 +2,48 @@
 
 // let day = 4;
 
-switch(day){
+// switch(day){
 
-    case 1:
+//     case 1:
 
-console.log("monday");
+// console.log("monday");
 
-break;
+// break;
        
-case 2:
+// case 2:
            
-console.log("tuesday");
+// console.log("tuesday");
             
-break;
+// break;
             
-case 3:
+// case 3:
                 
-console.log("wednesday");
+// console.log("wednesday");
                 
-break;
+// break;
                 
-case 4:
+// case 4:
                    
-console.log("thursday");
+// console.log("thursday");
                    
-break;
+// break;
                    
-case 5:
+// case 5:
                         
-console.log("friday");
+// console.log("friday");
                        
-break;
+// break;
                        
-case 6:
+// case 6:
                           
-console.log("saturday");
+// console.log("saturday");
                            
-break;
+// break;
                             
-console.log("sunday");
+// console.log("sunday");
                                
-break;
+// break;
 
-}
-// Create a script that prompts the user to input their exam score as a percentage (e.g., 85 for 85%). Then, use a `switch` statement to convert the percentage to a letter grade (A, B, C, D, or F) based on the following scale: A (90-100), B (80-89), C (70-79), D (60-69), F (below 60).
+// }
+// // Create a script that prompts the user to input their exam score as a percentage (e.g., 85 for 85%). Then, use a `switch` statement to convert the percentage to a letter grade (A, B, C, D, or F) based on the following scale: A (90-100), B (80-89), C (70-79), D (60-69), F (below 60).
 

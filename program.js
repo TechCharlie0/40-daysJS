@@ -76,17 +76,17 @@
 
 
 //  yo chai tei 400 ki ta 4 le divide le hunxa
-// let number = 30;
-// if (number % 4 == 0 && number % 100 !=0) {
-//     console.log("divisible by 4");
-// }
-// else if(number % 100 == 0 && number % 4 !=0) {
-//     console.log("divisible by 100");
+let number = 30;
+if (number % 4 == 0 && number % 100 !=0) {
+    console.log("divisible by 4");
+}
+else if(number % 100 == 0 && number % 4 !=0) {
+    console.log("divisible by 100");
 
-// }
-// else{
-//     console.log("it is leap year");
+}
+else{
+    console.log("it is leap year");
 
-// }
+}
 
     
