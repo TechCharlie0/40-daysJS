@@ -72,54 +72,29 @@
 //     }
 // }
 
-// const classInfo = [
-//     {
-//         name: "aman",
-//         grade: "A",
-//         city: "chitwan"
-//     },
-//     {
-//        name: "isha",
-//         grade: "A+",
-//         city: "chitwan"
+const classInfo = [
+    {
+        name: "am",
+        grade: "A",
+        city: "chitwan"
+    },
+    {
+       name: "is",
+        grade: "A+",
+        city: "chitwan"
 
 
 
-//     },
-//     {
-//         name: "utsav",
-//         grade: "B+",
-//         city: "chitwan"
-
-//     }
-// ];
-
-const max = prompt("enter your max number");
-//  1 dekhi max batw generate garna xa bhane random used garni ani max range le multiply ani round off garna math floor le garni
-const random = Math.floor(Math.random() * max) + 1;
-let guess = prompt("guess the number");
-while(true){
-    if(guess == "quit"){
-        console.log("user quit");
-        break;
+    },
+    {
+        name: "ut",
+        grade: "B+",
+        city: "chitwan"
 
     }
-    if(guess == random){
-        console.log("you are right");
-        break;
+];
 
-        
-
-    }
-    else{
-      guess =  prompt("your guess was wrong try again");
-    }
-    
-}
-
-
-
-
+ 
 
 
 
