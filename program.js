@@ -61,18 +61,18 @@
 
 
 // multiply by 5 or not
-let a = 0;
-if (a >0 ) {
-    console.log("multiplied by 5");
+// let a = 0;
+// if (a >0 ) {
+//     console.log("multiplied by 5");
     
-}
-else if( a % 2 == 0){
-    console.log("even number");
-}
-else{
-    console.log("odd number"); 
+// }
+// else if( a % 2 == 0){
+//     console.log("even number");
+// }
+// else{
+//     console.log("odd number"); 
 
-}
+// }
 
 
 //  yo chai tei 400 ki ta 4 le divide le hunxa
