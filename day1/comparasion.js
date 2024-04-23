@@ -29,7 +29,7 @@ if(color === "yellow"){
 console.log(" you have to go");
  }
 
-
+ 
 //else if statement//
 
 let ages = 14;
@@ -68,7 +68,20 @@ else if(marks <= 70){
  }
 
 
-        
+ //season
+
+ let season  = "january";
+ if(season === "january"){
+    console.log("spring season")
+ }
+else if(season === octuber){
+    console.log("winter season")
+
+
+}
+
+
+       
         
      
 
