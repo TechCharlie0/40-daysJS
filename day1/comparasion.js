@@ -37,11 +37,36 @@ if (ages >= 18) {
     console.log("you can vote");
     
 }
-else if(ages < 18){
+else if(ages    < 18){
     console.log("you cannot vote");
 
 
 }
+
+
+ //marks using else if statement//
+
+ let marks = 44;
+ if(marks <= 20){
+    console.log("you are fail");
+
+ }
+ else if(marks <= 50){
+    console.log("you got c");
+
+
+ }
+else if(marks <= 70){
+    console.log("you got b");
+    
+
+ }
+ else if(marks <= 90){
+    console.log("you got a");
+    
+
+ }
+
 
         
         
