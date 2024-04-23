@@ -19,8 +19,11 @@ console.log(newStr);
 
 // Create a program that takes a string as input and two indices representing the start and end positions of the substring. Use the `slice()` method to extract the substring between the specified indices. Print the extracted substring.
 
-// let str = "mango"
+// let str = "pemango"
 // console.log(str.slice(2,5));
+
+
+
 
 
 
