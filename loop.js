@@ -78,3 +78,83 @@ for(let j = 1; j<=3; j++)
 console.log(j);
 
 }
+
+
+for(let i = 5; i>=1; i--){
+    console.log(" naya i ko ho");
+for(let j = 1; j<=5; j++)
+console.log(j);
+
+}
+
+
+//while loop
+
+let guess = prompt("enter your guess");
+
+const favourite = "avatar"
+
+
+    while(guess != favourite && guess != "exist"){
+        if(guess =="quit"){
+            console.log("you quit");
+            break;
+        }
+
+
+         guess = prompt("try again");
+
+         
+    
+
+
+    }
+    if(guess == favourite  ){
+        console.log("you are quit genius");
+            
+    }
+    else{
+        console.log("try again");
+    }
+
+//new example of nested loop with nested array 
+
+    let student1 = [
+        ["aman", 10], ["isha", 20], ["manisha", 30]
+
+
+    ];
+    for( let i=0; i<student1.length; i++){
+        console.log( `info of student #${i}`);
+        for( let j=0; j<student1[i].length; j++){
+            console.log(student1[i][j]);
+        }
+    }
+
+
+    //for of loop
+    
+let fruit1 = ["mango", "applw", "litchi"];
+for(fruit of fruit1){
+    console.log(fruit);
+}
+
+for(i of "apnacollege"){
+    console.log(i);
+
+     
+}
+
+//nested for of loop
+
+let heroes = [
+    ["ironman", "spiderman", "thor" ],
+    ["batman", "superman", "wonder woman"]
+
+
+]
+for(list of heroes){
+    for(hero of list){
+        console.log(hero);
+    }
+}
