@@ -8,3 +8,8 @@ while (i <= 20) {
   console.log(i);
   i++;
 }
+
+let fruits = ["mango", "apple", "litchi", "papaya"];
+for (let i = 0; i < fruits.length; i++) {
+  console.log(i, fruits[i]);
+}
