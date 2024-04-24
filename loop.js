@@ -30,3 +30,20 @@ console.log(student[i][j]) ;
     }
 
 }
+
+for(let i =10; i>=1; i--){
+    console.log(i);
+}
+
+//print odd number
+for(let i = 1; i<=15; i=i+2){
+    console.log(i);
+
+}
+
+//print even number
+
+for(let i = 0; i<=15; i=i+2){
+    console.log(i);
+
+}
