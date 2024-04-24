@@ -31,6 +31,7 @@ console.log(student[i][j]) ;
 
 }
 
+//backward loop
 for(let i =10; i>=1; i--){
     console.log(i);
 }
@@ -41,9 +42,39 @@ for(let i = 1; i<=15; i=i+2){
 
 }
 
+//backward loop of odd number
+console.log("yo backward ho hai");
+
+for(let i =15; i>=1; i=i-2){
+    console.log(i);
+
+}
+
+
+
 //print even number
 
 for(let i = 0; i<=15; i=i+2){
     console.log(i);
+
+}
+
+
+//multiplication of table
+
+for(let i =0; i<=30; i=i+3){
+    console.log(i);
+
+}
+for(i = 30; i>=3; i=i-3){
+    console.log(i);
+}
+
+//nested loop//
+
+for(let i = 1; i<=3; i++){
+    console.log("i ko ho");
+for(let j = 1; j<=3; j++)
+console.log(j);
 
 }
