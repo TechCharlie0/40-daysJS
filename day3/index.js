@@ -24,3 +24,40 @@ let greet = function () {
 };
 
 multipeFunction(greet, 6);
+
+//add subtract multiply
+
+function multipleoperator(funo, x, y) {
+  return funo(x, y);
+}
+
+function add(a, b) {
+  return a + b;
+}
+
+function subtract(a, b) {
+  return a - b;
+}
+function multiply(a, b) {
+  return a * b;
+}
+
+multipleoperator(add, 2, 3);
+multipleoperator(subtract, 2, 3);
+multipleoperator(multiply, 2, 3);
+
+//even odd
+
+function checkoddeven(request) {
+  if (request == "odd") {
+    return function (n) {
+      console.log(!(n % 2 == 0));
+    };
+  } else if (request == "even") {
+    return function (n) {
+      console.log(n % 2 == 0);
+    };
+  } else {
+    console.log("wrong");
+  }
+}
