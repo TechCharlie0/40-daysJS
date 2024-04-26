@@ -1,16 +1,16 @@
-// //let greet = func();
-// console.log(greet("hello"));
-// return func;
+//let greet = func();
+console.log(greet("hello"));
+return func;
 
-// function func() {
-//   return function () {
-//     return "Namaste";
-//   };
-// }
+function func() {
+  return function () {
+    return "Namaste";
+  };
+}
 
-// let greet = func();
-// console.log(greet());
-// console.log(greet());
+let greet = func();
+console.log(greet());
+console.log(greet());
 
 //to reduce this problem higher oeder function is introduced
 
