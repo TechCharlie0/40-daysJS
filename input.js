@@ -64,22 +64,20 @@ const classInfo = {
   },
 };
 
-// const classInfo = [
-//     {
-//         name: "am",
-//         grade: "A",
-//         city: "chitwan"
-//     },
-//     {
-//        name: "is",
-//         grade: "A+",
-//         city: "chitwan"
-
-//     },
-//     {
-//         name: "ut",
-//         grade: "B+",
-//         city: "chitwan"
-
-//     }
-// ];
+const classInfo = [
+  {
+    name: "am",
+    grade: "A",
+    city: "chitwan",
+  },
+  {
+    name: "is",
+    grade: "A+",
+    city: "chitwan",
+  },
+  {
+    name: "ut",
+    grade: "B+",
+    city: "chitwan",
+  },
+];
