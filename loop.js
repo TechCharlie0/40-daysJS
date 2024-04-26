@@ -7,18 +7,18 @@ while(( guess != favDrama )){
 
     
    
-/// if (favDrama == guess) {
-//     console.log("you are correct");
+if (favDrama == guess) {
+    console.log("you are correct");
     
-// }
+}
 
-// loops with arrays
+loops with arrays
 
-// let fruits = ["mango", "apple", "papaya", "litchi"];
-// for (let i = 0; i <fruits.length; i++) {
-//     console.log(i , fruits[i]);
+let fruits = ["mango", "apple", "papaya", "litchi"];
+for (let i = 0; i <fruits.length; i++) {
+    console.log(i , fruits[i]);
     
-// }
+}
 
 
 let student = [ ["aman", 95], ["shradha", 94.5],["isha", 1], ["utsav", 2]];
