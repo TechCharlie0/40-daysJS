@@ -1,15 +1,15 @@
-// function hello() {
-//   console.log("hello how are you?");
-// }
+function hello() {
+  console.log("hello how are you?");
+}
 
-// function demo() {
-//   console.log("calling hello fun");
+function demo() {
+  console.log("calling hello fun");
 
-//   hello();
-// }
-// console.log("calling demo fun");
-// demo();
-// console.log("done");
+  hello();
+}
+console.log("calling demo fun");
+demo();
+console.log("done");
 
 //visualizinf the call stack
 
@@ -26,3 +26,11 @@ function four() {
   let ans = three() + one();
   console.log(ans);
 }
+
+//single thread languade
+
+let a = 25;
+console.log(a);
+let b = 20;
+console.log(b);
+console.log(a + b);
