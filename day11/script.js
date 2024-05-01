@@ -34,3 +34,12 @@ console.log(a);
 let b = 20;
 console.log(b);
 console.log(a + b);
+
+h1 = document.querySelector("h1");
+setTimeout(() => {
+  h1.style.color = "red";
+}, 2000);
+
+setTimeout(() => {
+  h1.style.color = "green";
+}, 3000);
