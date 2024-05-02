@@ -65,4 +65,14 @@ function saveToDatabase(data) {
     }
   });
 }
-saveToDatabase("apna college");
+
+//then() & catch()
+
+let request = saveToDatabase("apna college");
+request
+  .then(() => {
+    console.log("promess resolved");
+  })
+  .catch(() => {
+    console.log("promise rejected");
+  });
