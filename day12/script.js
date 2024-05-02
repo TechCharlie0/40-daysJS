@@ -15,39 +15,54 @@
 //   });
 // });
 
-function saveToDatabase(data, sucess, failure) {
-  let internetSpeed = Math.floor(Math.random() * 10) + 1;
-  if (internetSpeed > 4) {
-    sucess();
-  } else {
-    failure();
-  }
-}
+// function saveToDatabase(data, sucess, failure) {
+//   let internetSpeed = Math.floor(Math.random() * 10) + 1;
+//   if (internetSpeed > 4) {
+//     sucess();
+//   } else {
+//     failure();
+//   }
+// }
 
-saveToDatabase(
-  "apna college",
-  () => {
-    console.log("sucess");
-    saveToDatabase(
-      "hello world",
-      () => {
-        console.log("sucess2");
-        saveToDatabase(
-          "isha",
-          () => {
-            console.log("sucess3");
-          },
-          () => {
-            console.log("failure3");
-          }
-        );
-      },
-      () => {
-        console.log("fail2 ");
-      }
-    );
-  },
-  () => {
-    console.log("failure");
-  }
-);
+// saveToDatabase(
+//   "apna college",
+//   () => {
+//     console.log("sucess");
+//     saveToDatabase(
+//       "hello world",
+//       () => {
+//         console.log("sucess2");
+//         saveToDatabase(
+//           "isha",
+//           () => {
+//             console.log("sucess3");
+//           },
+//           () => {
+//             console.log("failure3");
+//           }
+//         );
+//       },
+//       () => {
+//         console.log("fail2 ");
+//       }
+//     );
+//   },
+//   () => {
+//     console.log("failure");
+//   }
+// );
+
+//resolve and reject
+//asynchronous data
+
+function saveToDatabase(data) {
+  return new Promise((resolve, reject) => {
+    let internetSpeed = Math.floor(Math.random() * 10) + 1;
+    if (internetSpeed > 4) {
+      resolve("sucess");
+    } else {
+      reject("failure");
+    }
+  });
+}
+saveToDatabase("apna college");
