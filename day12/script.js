@@ -15,11 +15,21 @@
 //   });
 // });
 
-function saveToDatabase(data) {
+function saveToDatabase(data, sucess, failure) {
   let internetSpeed = Math.floor(Math.random() * 10) + 1;
   if (internetSpeed > 4) {
-    console.log("your data was saved");
+    sucess();
   } else {
-    console.log("your dta was not saved");
+    failure();
   }
 }
+
+saveToDatabase(
+  "apna college",
+  () => {
+    console.log("your data was ssaved");
+  },
+  () => {
+    console.log("your data was not ssaved");
+  }
+);
