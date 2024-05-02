@@ -27,9 +27,18 @@ function saveToDatabase(data, sucess, failure) {
 saveToDatabase(
   "apna college",
   () => {
-    console.log("your data was ssaved");
+    console.log("sucess");
+    saveToDatabase(
+      "hello world",
+      () => {
+        console.log("sucess2");
+      },
+      () => {
+        console.log("sucess3");
+      }
+    );
   },
   () => {
-    console.log("your data was not ssaved");
+    console.log("failure");
   }
 );
