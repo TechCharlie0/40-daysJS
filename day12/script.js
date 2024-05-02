@@ -32,9 +32,18 @@ saveToDatabase(
       "hello world",
       () => {
         console.log("sucess2");
+        saveToDatabase(
+          "isha",
+          () => {
+            console.log("sucess3");
+          },
+          () => {
+            console.log("failure3");
+          }
+        );
       },
       () => {
-        console.log("sucess3");
+        console.log("fail2 ");
       }
     );
   },
