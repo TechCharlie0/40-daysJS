@@ -2,7 +2,9 @@ let btn = document.querySelector("button");
 
 btn.addEventListener("click", async () => {
   let facts = await getFacts();
-  console.log(facts.data);
+  console.log(facts);
+  let p = document.querySelector("#result");
+  p.innerText = facts;
 });
 
 let url = "https://catfact.ninja/fact";
