@@ -34,14 +34,14 @@ newBtn.addEventListener("click", function () {
   console.log("color updated");
 });
 
-// function getRamdomcolor() {
-//   let red = Math.floor(Math.random() * 255);
-//   let blue = Math.floor(Math.random() * 255);
-//   let green = Math.floor(Math.random() * 255);
+function getRamdomcolor() {
+  let red = Math.floor(Math.random() * 255);
+  let blue = Math.floor(Math.random() * 255);
+  let green = Math.floor(Math.random() * 255);
 
-//   let color = `rgb(${red}, ${blue}, ${green})`;
-//   return color;
-// }
+  let color = `rgb(${red}, ${blue}, ${green})`;
+  return color;
+}
 
 //this eventhandler
 
