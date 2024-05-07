@@ -23,16 +23,16 @@ char.addEventListener("click", function () {
   console.log("this is clicked");
 });
 
-// let newBtn = document.querySelector("button");
-// newBtn.addEventListener("click", function () {
-//   let h1 = document.querySelector("h1");
-//   let randomColor = getRamdomcolor();
-//   h1.innerText = randomColor;
+let newBtn = document.querySelector("button");
+newBtn.addEventListener("click", function () {
+  let h1 = document.querySelector("h1");
+  let randomColor = getRamdomcolor();
+  h1.innerText = randomColor;
 
-//   let div = document.querySelector("div");
-//   div.style.backgroundColor = randomColor;
-//   console.log("color updated");
-// });
+  let div = document.querySelector("div");
+  div.style.backgroundColor = randomColor;
+  console.log("color updated");
+});
 
 // function getRamdomcolor() {
 //   let red = Math.floor(Math.random() * 255);
