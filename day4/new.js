@@ -1,15 +1,15 @@
-// let btn = document.querySelectorAll("button");
+let btn = document.querySelectorAll("button");
 
-// for (btns of btn) {
-//   btns.addEventListener("click", myGod);
-// }
-// function myGod() {
-//   console.log("ohgod");
-// }
+for (btns of btn) {
+  btns.addEventListener("click", myGod);
+}
+function myGod() {
+  console.log("ohgod");
+}
 
-// user.onclick = function () {
-//   console.log("click it");
-// };
+user.onclick = function () {
+  console.log("click it");
+};
 
 // function user() {
 //   console.log("you click me");
