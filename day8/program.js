@@ -16,16 +16,14 @@ if (str.length > 10) {
 }
 
 // positive negative number
-// let a = 2;
-// if (a > 0 ) {
-//     console.log("the number is positive");
-// }
-// else if(a < 0){
-//     console.log("the number is negative");
-// }
-// else{
-//     console.log("the number is zero");
-// }
+let a = 2;
+if (a > 0) {
+  console.log("the number is positive");
+} else if (a < 0) {
+  console.log("the number is negative");
+} else {
+  console.log("the number is zero");
+}
 
 // marks of a b c f
 // let x = 78;
