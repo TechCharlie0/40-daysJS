@@ -8,13 +8,12 @@ if (number < 100) {
 }
 
 // tyo string is greatee than 10 or not
-// let str = "appleisgood";
-// if (str.length > 10){
-//     console.log("the string is long");
-// }
-// else{
-// console.log("the string is short");
-// }
+let str = "appleisgood";
+if (str.length > 10) {
+  console.log("the string is long");
+} else {
+  console.log("the string is short");
+}
 
 // positive negative number
 // let a = 2;
