@@ -11,8 +11,8 @@ console.log(typeof a, typeof b, typeof c, typeof d, typeof e);
 
  
 let str1 = "ilovedairymilk";
-// console.log(str1.toUpperCase());
-// console.log(str1.replace("dairy", "cow"));
+console.log(str1.toUpperCase());
+console.log(str1.replace("dairy", "cow"));
 
 
 //chaining method
