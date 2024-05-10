@@ -26,23 +26,18 @@ if (a > 0) {
 }
 
 // marks of a b c f
-// let x = 78;
-// if (x > 90) {
-//     console.log("you got a grade A+");
-// }
-//   else if (x > 80) {
-//    console.log("you got a grade A");
-// }
-// else if (x > 70) {
-//     console.log("you got a grade B+");
-//  }
-//  else if (x > 60) {
-//     console.log("you got a grade B");
-//  }
-//  else{
-//     console.log("you got a grade f");
-
-//  }
+let x = 78;
+if (x > 90) {
+  console.log("you got a grade A+");
+} else if (x > 80) {
+  console.log("you got a grade A");
+} else if (x > 70) {
+  console.log("you got a grade B+");
+} else if (x > 60) {
+  console.log("you got a grade B");
+} else {
+  console.log("you got a grade f");
+}
 
 // multiply by 5 or not
 // let a = 0;
