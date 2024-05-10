@@ -1,10 +1,10 @@
-// let name = "isha kandel";
-// let location = "gaindakot";
-// console.log("my name is :"+ name + "i live in :"+ location);
-// console.log(`my name is: ${name} i live in: ${location}`);
+let name = "isha kandel";
+let location = "gaindakot";
+console.log("my name is :" + name + "i live in :" + location);
+console.log(`my name is: ${name} i live in: ${location}`);
 
 // // my name is ... and i live in ...
- 
+
 // let place = "chitwan";
 
 // console.log(place[2]);
@@ -23,9 +23,6 @@
 // console.log(isha[3]);
 // console.log(isha[4]);
 
-
-
-
 // // push
 // // pop
 // // shift
@@ -39,33 +36,11 @@
 // man = "isha kandel";
 // console.log(man)
 
-
 let name = "isha";
-console.log(name.length );
+console.log(name.length);
 console.log(name[0]);
-
-
 
 let firstName = "isha";
 let secondName = "kandel";
 let thirdName = "gaindakot";
-console.log(`my name is ${firstName} ${secondName} i live in ${thirdName} ` );
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
+console.log(`my name is ${firstName} ${secondName} i live in ${thirdName} `);
