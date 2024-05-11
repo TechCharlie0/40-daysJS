@@ -29,12 +29,12 @@ console.log(isha[4]);
 // // unshift
 // // slice
 // // splice
-// let man = "isha";
-// console.log(man[0]);
-// man[0]= "a";
-// console.log(man[0]);
-// man = "isha kandel";
-// console.log(man)
+let man = "isha";
+console.log(man[0]);
+man[0] = "a";
+console.log(man[0]);
+man = "isha kandel";
+console.log(man);
 
 let name = "isha";
 console.log(name.length);
