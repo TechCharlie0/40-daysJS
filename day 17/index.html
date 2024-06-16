@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="w-full max-w-lg mx-auto p-4">
+      <header class="text-center mb-6">
+        <h1 class="text-4xl font-bold text-gray-800">To-Do List</h1>
+      </header>
+      <main class="bg-white p-6 rounded-lg shadow-md">
+        <form id="todo-form" class="flex mb-4">
+          <input
+            id="todo-input"
+            type="text"
+            placeholder="Add a new task..."
+            class="flex-1 p-2 border border-gray-300 rounded-l-lg focus:outline-none"
+          />
+          <button
+            type="submit"
+            class="bg-blue-500 text-white p-2 rounded-r-lg hover:bg-blue-600"
+          >
+            Add
+          </button>
+        </form>
+        <ul id="todo-list" class="list-disc pl-6">
+          <!-- Tasks will be added here dynamically -->
+        </ul>
+      </main>
+    </div>
+    <script>
+      const form = document.getElementById("todo-form");
+      const input = document.getElementById("todo-input");
+      const list = document.getElementById("todo-list");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const task = input.value.trim();
+        if (task) {
+          const listItem = document.createElement("li");
+          listItem.textContent = task;
+          listItem.classList.add("mb-2");
+          list.appendChild(listItem);
+          input.value = "";
+        }
+      });
+    </script>
+  </body>
+</html>

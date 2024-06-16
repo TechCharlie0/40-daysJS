@@ -2,13 +2,15 @@
     padding: 0;
     margin: 0;
     text-transform: capitalize;
-    font-family: sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
+    color: rgb(104, 101, 101);
+
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(104, 101, 101);
 }
 
 body {
@@ -36,7 +38,7 @@ body {
 }
 
 .left .heading1 span {
-    color: rgb(230, 73, 73);
+    color: rgb(241, 106, 57);
 }
 
 .left .left-icon {
@@ -62,15 +64,26 @@ body {
 }
 
 .main-container {
-    padding: 30px 50px;
+    padding: 30px 40px;
+}
+
+.main-container span {
+    color: rgb(241, 106, 57);
+}
+
+.date {
+    padding: 20px 0px 40px 0px;
+
 }
 
 .justify-content-box {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
+
+
 }
 
 .first-box {
@@ -88,6 +101,7 @@ body {
     position: relative;
     top: 40px;
     left: 20px;
+    color: rgb(94, 83, 83);
 }
 
 .first-box p {
@@ -210,4 +224,34 @@ body {
 .main-container .third-box svg circle {
     stroke-dashoffset: 0;
     stroke-dasharray: 150;
+}
+
+.recent-order {
+    margin-top: 3rem;
+    padding: 30px 50px;
+
+}
+
+.recent-order span {
+    color: rgb(241, 106, 57);
+
+}
+
+.recent-order h2 {
+    color: rgb(80, 73, 73);
+}
+
+.recent-order table {
+    background-color: white;
+    width: 70%;
+    padding: 40px 0px 30px 0px;
+    border-radius: 20px;
+
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(155, 149, 149, 0.5);
+
+}
+
+.recent-order table td {
+    padding: 10px;
 }
