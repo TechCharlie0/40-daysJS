@@ -1,7 +1,6 @@
-// Function to handle clicks on sidebar items
 document.querySelectorAll(".left-icon a").forEach((item) => {
   item.addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent the default link behavior
+    event.preventDefault();
     alert(`You clicked on ${event.target.textContent.trim()}`);
   });
 });
