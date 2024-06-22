@@ -1,3 +1,5 @@
+// script.js
+
 // Function to handle clicks on sidebar items
 document.querySelectorAll(".left-icon a").forEach((item) => {
   item.addEventListener("click", (event) => {

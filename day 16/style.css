@@ -255,3 +255,54 @@ body {
 .recent-order table td {
     padding: 10px;
 }
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .left {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .left .heading1 span {
+    color: #f36f56;
+}
+
+body.dark-mode .left .left-icon a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .left-icon a:hover {
+    color: #f36f56;
+}
+
+body.dark-mode .main-container {
+    color: #e0e0e0;
+}
+
+body.dark-mode .main-container span {
+    color: #f36f56;
+}
+
+body.dark-mode .recent-order h1 span {
+    color: #f36f56;
+}
+
+body.dark-mode .recent-order table {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+body.dark-mode .recent-order table td,
+body.dark-mode .recent-order table th {
+    color: #e0e0e0;
+}
+
+body.dark-mode .recent-order table tr:nth-child(even) {
+    background-color: #2b2b2b;
+}
+
+body.dark-mode .recent-order table tr:hover {
+    background-color: #343434;
+}
