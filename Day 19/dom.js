@@ -7,3 +7,7 @@ let innerTxt = document.querySelector("p");
 console.log(innerTxt.innerText);
 console.log(innerTxt.textContent);
 console.log(innerTxt.innerHTML);
+
+//manipulating attributes
+//obj.getAttribute(attr)
+//obj.setAttribute(attr,val)
