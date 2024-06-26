@@ -19,4 +19,9 @@ console.log(body.prepend(newP));
 let btn = document.createElement("button");
 console.log((btn.innerHTML = "new button!"));
 let p = document.querySelector("p");
-p.insertAdjacentElement("beforebegin", btn);
+console.log(p.insertAdjacentElement("beforebegin", btn));
+
+//removing element
+//removeChild(element)
+//remove(element)
+console.log(body.removeChild(btn));
