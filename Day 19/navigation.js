@@ -10,3 +10,5 @@ console.log(box.children);
 
 let ul = document.querySelector("ul");
 console.log(ul.childElementCount);
+console.log(ul.children);
+console.log(ul.children[1].previousElementSibling);
