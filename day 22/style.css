@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+/* variables */
+:root {
+    --primary: #22d0ff;
+    --secondary: #0a0b5b;
+}
+
+/* reset */
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* base styles */
+body {
+    background-color: var(--secondary);
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+}
+
+.button {
+    background: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+}
+
+.button:hover {
+    color: #222;
+    background-color: var(--primary);
+}
+
+.button:active {
+    outline: none;
+}
+
+input,
+textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #f2f2f2;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid #9893d8;
+}
+
+/* fonts */
+
+h1,
+h2,
+h3,
+h4 {
+    color: #dddbff;
+    font-weight: normal;
+}
+
+p,
+a,
+li {
+    color: #9893d8;
+}
+
+h1,
+h3 {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+.leading {
+    font-size: 1.1em;
+}
+
+/* MOBILE STYLES */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+/* 1- nav section */
+.site-nav {
+    margin: 0 20px;
+}
+
+.site-nav ul {
+    display: none;
+}
+
+.site-nav h1 {
+    grid-column: 1/4;
+    grid-row: 1;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--primary);
+}
+
+/* 2- hero section */
+#welcome {
+    padding: 0 20px 20px 20px;
+}
+
+.welcome-text {
+    grid-column: 1/6;
+}
+
+.welcome-img {
+    grid-column: 6/9;
+}
+
+.welcome-img img {
+    width: 200%;
+}
+
+.welcome-text a {
+    margin: 20px 0;
+}
+
+/* 3- portfolio section */
+#portfolio {
+    background: url(https://github.com/iamshaunjp/responsive-css-grid-build/blob/lesson-2/assets/square_bg.png?raw=true) bottom/cover no-repeat;
+    padding: 30px 20px;
+}
+
+#portfolio h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.projects a {
+    grid-column: 1/9;
+    margin: 20px 0;
+    display: flex;
+}
+
+.projects a * {
+    margin: 0 20px;
+    max-width: 40%;
+    align-self: center;
+}
+
+.projects h4 {
+    color: #9994f7;
+}
+
+/* 4- skills section */
+#skills {
+    padding: 30px 20px;
+    background-color: #07083e;
+}
+
+#skills h3 {
+    text-align: center;
+}
+
+#skills ul {
+    margin: 40px 0;
+}
+
+#skills li {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    grid-column: span 4;
+    text-align: center;
+}
+
+#skills img {
+    height: 80px;
+    margin: 10px auto;
+}
+
+/* 5- contact section */
+#contact {
+    padding: 30px 20px;
+    background: #080936;
+}
+
+#contact h3,
+#contact p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#contact form {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#contact .button {
+    margin-top: 10px;
+}
+
+/* 6- footer section */
+footer {
+    padding: 30px 20px;
+    background-color: #14153d;
+    background-image: url(https://i.ibb.co/Fsc8R8H/satellite.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+footer .copyright {
+    grid-column: 1/3;
+    font-size: 0.8em;
+}
+
+footer .social {
+    grid-column: 7/9;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer li {
+    margin: 0 6px;
+}
+
+footer img {
+    width: 20px;
+}
