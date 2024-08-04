@@ -288,7 +288,6 @@ footer img {
     }
 }
 
-/* LARGE TABLET & LAPTOP STYLES */
 @media screen and (min-width: 960px) {
     body {
         font-size: 1.125rem;
