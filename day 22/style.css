@@ -367,6 +367,7 @@ footer img {
     }
 }
 
+/* DESKTOP STYLES */
 @media screen and (min-width: 1200px) {
     body {
         font-size: 1.25rem;
