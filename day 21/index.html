@@ -30,5 +30,16 @@
     </div>
 
     <script src="https://unpkg.com/atropos/dist/atropos.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const myAtropos = Atropos({
+          el: ".my-atropos",
+          shadow: true,
+          highlight: true,
+          rotateXMax: 25,
+          rotateYMax: 25,
+        });
+      });
+    </script>
   </body>
 </html>
