@@ -1,0 +1,46 @@
+:root {
+    --light-bg: #f1f5f9;
+    --dark-bg: #1e293b;
+    --light-text: #1e293b;
+    --dark-text: #f1f5f9;
+}
+
+body.light-mode {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--light-bg);
+}
+
+nav h1 {
+    margin: 0;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+button i {
+    color: var(--light-text);
+}
+
+body.dark-mode nav {
+    background-color: var(--dark-bg);
+}
+
+body.dark-mode button i {
+    color: var(--dark-text);
+}
