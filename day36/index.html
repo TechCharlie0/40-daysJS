@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 35</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+    <script>
+      function addLanguage(langName) {
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector(".language").appendChild(li);
+      }
+      addLanguage("python");
+      addLanguage("java");
+      addLanguage("js");
+      addLanguage("react");
+
+      //edit
+      const seconfLang = document.querySelector("li:nth-child(2)");
+      const newLi = document.createElement("li");
+      newLi.textContent = "MangoDb";
+      seconfLang.replaceWith(newLi);
+
+      //edit
+      const firstLang = document.querySelector("li:nth-child(1)");
+      firstLang.outerHTML = "<li>Isha</li>";
+
+      //remove
+      const lastLang = document.querySelector("li:Last-child");
+      lastLang.remove();
+    </script>
+  </body>
+</html>
