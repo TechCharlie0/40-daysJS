@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ne">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>नेपाली क्यालेन्डर</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="calendar-container">
+      <header class="calendar-header">
+        <button id="prevMonth">&lt;</button>
+        <h1 id="monthYear">लोड हुँदैछ...</h1>
+        <button id="nextMonth">&gt;</button>
+      </header>
+      <div class="calendar-grid">
+        <div class="day">आइतबार</div>
+        <div class="day">सोमबार</div>
+        <div class="day">मङ्गलबार</div>
+        <div class="day">बुधबार</div>
+        <div class="day">बिहीबार</div>
+        <div class="day">शुक्रबार</div>
+        <div class="day">शनिबार</div>
+      </div>
+      <div class="calendar-dates" id="calendarDates">
+        <!-- Nepali dates will be dynamically generated -->
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/nepali-date-converter"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
