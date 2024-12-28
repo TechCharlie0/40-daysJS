@@ -8,31 +8,34 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
-        font-family: "Arial", sans-serif;
+        font-family: "Poppins", sans-serif;
         margin: 0;
         overflow: hidden;
         height: 100vh;
+        background-color: #2c2b2b;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         color: white;
         text-align: center;
-        background: linear-gradient(45deg, #ff6f61, #3b82f6, #34d399);
-        background-size: 600% 600%;
-        animation: gradient 15s ease infinite;
+        position: relative;
       }
 
-      /* Fireworks Canvas Style */
+      /* Fireworks Canvas Style (Placed behind greeting card) */
       canvas {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
+        z-index: -2;
       }
 
       /* Greeting Card */
@@ -45,36 +48,24 @@
         opacity: 0;
         transform: translateY(30px);
         animation: fadeIn 2s forwards 2s;
+        z-index: 1;
       }
 
       h1 {
-        font-size: 3rem;
+        font-family: "Sacramento", cursive;
+        font-size: 4rem;
         margin-bottom: 1rem;
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         letter-spacing: 5px;
-        animation: bounceIn 2s ease-out;
       }
 
       p {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         letter-spacing: 2px;
-        animation: fadeInText 3s ease-out;
+        font-weight: bold;
       }
 
-      /* Gradient Animation */
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-
-      /* Greeting Animation */
+      /* FadeIn Animation */
       @keyframes fadeIn {
         0% {
           opacity: 0;
@@ -86,37 +77,57 @@
         }
       }
 
-      @keyframes bounceIn {
+      /* Firework Particle Animation */
+      @keyframes fireworkAnim {
         0% {
-          transform: scale(0.5);
+          transform: scale(0);
+          opacity: 0.8;
         }
         50% {
-          transform: scale(1.2);
+          transform: scale(1);
+          opacity: 1;
         }
         100% {
-          transform: scale(1);
+          transform: scale(0);
+          opacity: 0;
         }
       }
 
-      @keyframes fadeInText {
+      /* Cracker Explosion Animation */
+      @keyframes crackerExplode {
         0% {
-          opacity: 0;
-        }
-        100% {
+          transform: scale(0);
           opacity: 1;
         }
+        50% {
+          transform: scale(1.5);
+          opacity: 0.6;
+        }
+        100% {
+          transform: scale(0);
+          opacity: 0;
+        }
+      }
+
+      .cracker {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ffcc00;
+        animation: crackerExplode 1s ease-out forwards;
       }
     </style>
   </head>
   <body>
+    <!-- Fireworks Canvas (Placed first for background) -->
+    <canvas id="fireworksCanvas"></canvas>
+
     <!-- Greeting Card -->
     <div class="greeting-card">
-      <h1>Happy New Year 2024!</h1>
-      <p>May this year bring you joy, success, and happiness.</p>
+      <h1>Happy New Year, My Love!</h1>
+      <p>Wishing you a year full of love, joy, and unforgettable moments!</p>
     </div>
-
-    <!-- Fireworks Canvas -->
-    <canvas id="fireworksCanvas"></canvas>
 
     <script>
       const canvas = document.getElementById("fireworksCanvas");
@@ -125,58 +136,120 @@
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
 
-      // Fireworks Particle Constructor
-      function Firework() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 3 + 1;
-        this.speedX = Math.random() * 3 - 1.5;
-        this.speedY = Math.random() * 3 - 1.5;
-        this.alpha = Math.random() * 0.5 + 0.5;
-        this.color = `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(
-          Math.random() * 255
-        )}, ${Math.floor(Math.random() * 255)}, ${this.alpha})`;
+      // Firework Particle Constructor
+      function Firework(x, y, color, particleCount) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        this.particleCount = particleCount;
+        this.particles = [];
+
+        // Create the particles
+        for (let i = 0; i < this.particleCount; i++) {
+          this.particles.push(new Particle(this.x, this.y, this.color));
+        }
       }
 
-      Firework.prototype.update = function () {
+      // Particle Constructor (each burst of firework)
+      function Particle(x, y, color) {
+        this.x = x;
+        this.y = y;
+        this.size = Math.random() * 3 + 1;
+        this.speedX = Math.random() * 4 - 2; // Random X speed
+        this.speedY = Math.random() * 4 - 2; // Random Y speed
+        this.alpha = 1;
+        this.color = color;
+      }
+
+      Particle.prototype.update = function () {
         this.x += this.speedX;
         this.y += this.speedY;
-        this.alpha -= 0.005;
-        this.size *= 0.98;
+        this.alpha -= 0.02; // Fade out over time
+        this.size *= 0.98; // Shrink the particles over time
       };
 
-      Firework.prototype.draw = function () {
+      Particle.prototype.draw = function () {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = this.color;
+        ctx.fillStyle = `rgba(${this.color[0]}, ${this.color[1]}, ${this.color[2]}, ${this.alpha})`;
         ctx.fill();
         ctx.closePath();
       };
 
-      // Create multiple fireworks
-      function createFireworks() {
-        for (let i = 0; i < 150; i++) {
-          fireworks.push(new Firework());
+      Firework.prototype.update = function () {
+        for (let i = 0; i < this.particles.length; i++) {
+          this.particles[i].update();
+          this.particles[i].draw();
+          if (this.particles[i].alpha <= 0) {
+            this.particles.splice(i, 1);
+            i--;
+          }
         }
+      };
+
+      Firework.prototype.launch = function (launchPosition) {
+        // Random color for the firework
+        const colors = [
+          [255, 99, 71], // Red
+          [0, 255, 0], // Green
+          [30, 144, 255], // Blue
+          [255, 215, 0], // Yellow
+          [255, 105, 180], // Pink
+        ];
+        const color = colors[Math.floor(Math.random() * colors.length)];
+
+        // Create a firework at the launch position (top or bottom)
+        const x = Math.random() * canvas.width;
+        const y = launchPosition === "top" ? 50 : canvas.height - 50; // Launch from top or bottom
+        const particleCount = Math.random() * 100 + 50;
+        const firework = new Firework(x, y, color, particleCount);
+        return firework;
+      };
+
+      // Store fireworks
+      const fireworks = [];
+
+      // Function to add fireworks
+      function addFirework() {
+        const launchPosition = Math.random() > 0.5 ? "top" : "bottom"; // Randomly choose top or bottom
+        const firework = new Firework().launch(launchPosition);
+        fireworks.push(firework);
       }
 
+      // Animate fireworks
       function animateFireworks() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+
         for (let i = fireworks.length - 1; i >= 0; i--) {
           fireworks[i].update();
-          fireworks[i].draw();
-          if (fireworks[i].alpha <= 0) {
+          if (fireworks[i].particles.length === 0) {
             fireworks.splice(i, 1);
           }
         }
+
         requestAnimationFrame(animateFireworks);
       }
 
-      // Start fireworks after a delay
-      setTimeout(() => {
-        createFireworks();
-        animateFireworks();
-      }, 1000);
+      // Start the animation
+      setInterval(addFirework, 1000); // Add fireworks every second
+      animateFireworks(); // Start the animation loop
+
+      // Function to create crackers (diwali-like explosion effects)
+      function createCracker() {
+        const cracker = document.createElement("div");
+        cracker.classList.add("cracker");
+        cracker.style.top = `${Math.random() * (window.innerHeight / 2)}px`; // Start from top half of the screen
+        cracker.style.left = `${Math.random() * window.innerWidth}px`;
+        document.body.appendChild(cracker);
+
+        // Remove the cracker after animation ends
+        setTimeout(() => {
+          cracker.remove();
+        }, 1000); // Duration of cracker explosion
+      }
+
+      // Add crackers continuously
+      setInterval(createCracker, 500);
     </script>
   </body>
 </html>
