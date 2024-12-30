@@ -71,19 +71,15 @@ canvas {
     color: white;
 }
 
-/* Paragraph Style */
 p {
     font-size: 1.5rem;
-    color: #fdd835;
-    /* Golden color for text */
+    color: #f5df80;
     max-width: 800px;
     margin: 20px auto;
     line-height: 1.6;
     font-weight: 400;
-    text-shadow: 0 2px 5px rgba(255, 223, 85, 0.8);
-    /* Soft golden shadow */
+    text-shadow: 0 2px 5px rgba(248, 222, 103, 0.8);
     background: rgba(0, 0, 0, 0.5);
-    /* Slightly transparent dark background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
@@ -92,13 +88,10 @@ p {
 
 p:hover {
     transform: scale(1.05);
-    /* Subtle hover effect for interaction */
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8);
-    /* More pronounced shadow on hover */
 }
 
 
-/* FadeIn Animation */
 @keyframes fadeIn {
     0% {
         opacity: 0;
