@@ -78,9 +78,7 @@ p {
     margin: 20px auto;
     line-height: 1.6;
     font-weight: 400;
-    text-shadow: 0 2px 5px rgba(248, 222, 103, 0.8);
     background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
     transition: all 0.3s ease-in-out;
@@ -95,11 +93,16 @@ p:hover {
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(50px);
     }
 
     100% {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.main-content {
+    z-index: 1;
+    animation: fadeIn 1s ease-in-out;
 }
