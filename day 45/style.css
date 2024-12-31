@@ -35,13 +35,13 @@ canvas {
     font-style: normal;
     font-size: 5rem;
     margin-bottom: 0.5rem;
-    text-shadow: 0 4px 15px rgba(255, 223, 85, 0.8);
+    text-shadow: 0 4px 15px rgba(245, 219, 106, 0.8);
 }
 
 .subtitle {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    color: #fdd835;
+    color: #4caf50;
 }
 
 .timer {
@@ -62,7 +62,7 @@ canvas {
 .time-value {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #ffeb3b;
+    color: #f5df80;
 }
 
 .time-label {
@@ -72,8 +72,8 @@ canvas {
 }
 
 p {
-    font-size: 1.5rem;
-    color: #f5df80;
+    font-size: 1.2rem;
+    color: #4caf50;
     max-width: 800px;
     margin: 20px auto;
     line-height: 1.6;
@@ -100,9 +100,4 @@ p:hover {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.main-content {
-    z-index: 1;
-    animation: fadeIn 1s ease-in-out;
 }
